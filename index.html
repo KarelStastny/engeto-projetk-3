@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <!-- Karel Švancar -->
+  <!-- karell.stastny29@gmail.com -->
+  <!-- Karel Š. -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+      <section class="nav-container">
+        <div class="logo">Mé weby</div>
+        <nav>
+          <ul class="nav-links">
+            <li><a class="one-link" href="#">Domů</a></li>
+            <li><a href="#">O nás</a></li>
+            <li><a href="#">Služby</a></li>
+            <li><a href="#">Kontakt</a></li>
+            <a class="toggle-button">Dark</a>
+          </ul>
+          <div class="hamburger w3-right">
+            <i id="icHamburger" class="fas fa-bars w3-xlarge"></i>
+            <i id="icCross" class="fas fa-times w3-xlarge hidden"></i>
+          </div>
+        </nav>
+      </section>
+    </header>
+
+    <!-- Sekce 1 -->
+    <section class="image-section">
+      <div class="image-container">
+        <img src="./images/animals/1.jpg" alt="Image 1" />
+      </div>
+      <div class="image-container">
+        <img src="./images/animals/3.jpeg" alt="Image 2" />
+      </div>
+      <div class="image-container">
+        <img src="./images/animals/5.jpg" alt="Image 3" />
+      </div>
+    </section>
+
+    <!-- Section 2 -->
+    <section class="my-web">
+      <h2>Mé weby</h2>
+      <div class="my-web-container">
+        <a
+          href="https://karelstastny.github.io/The-Witcher-Web/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img src="./images/2.JPG" alt="" />
+          <p>The Witcher Web</p>
+        </a>
+        <a
+          href="https://karelstastny.github.io/react-best-electronics/"
+          target="_blank"
+          rel="noopener noreferrer"
+          ><img src="./images/1.JPG" alt="" />
+          <p>Best Electronic</p></a
+        >
+
+        <a
+          href="https://karelstastny.github.io/my-web/"
+          target="_blank"
+          rel="noopener noreferrer"
+          ><img src="./images/3.JPG" alt="" />
+          <p>My web</p></a
+        >
+      </div>
+    </section>
+
+    <!-- Sekce 3 -->
+
+    <section class="form-section">
+      <div class="form-container">
+        <input
+          type="password"
+          class="form-input"
+          id="password1"
+          placeholder="Zadejte heslo"
+        />
+        <input
+          type="password"
+          class="form-input"
+          id="password2"
+          placeholder="Zopakujte heslo"
+        />
+        <button class="check-button" onclick="checkPassword()">
+          Zkontrolovat
+        </button>
+        <p class="message" id="message"></p>
+      </div>
+    </section>
+
+    <button class="to-top" onclick="scrollToTop()">
+      <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <footer>Všechna práva vyhrazena</footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
